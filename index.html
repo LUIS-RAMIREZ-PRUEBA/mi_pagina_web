@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>¡Hola, soy LUIS FERNANDO RAMIREZ !</h1>
+        <p>Bienvenida a mi primera página web</p>
+        <img src="luis.jpg" alt="Foto de Denisse" width="250">
+
+    </header>
+
+    <section>
+        <h2>Sobre mí</h2>
+        <p>Me encanta la programación y usar herramientas prácticas como Python y VS Code.</p>
+    </section>
+<section>
+  <h2>Mis proyectos</h2>
+  <div class="proyectos">
+    <div class="tarjeta">
+      <h3>🧮 Calculadora en Python</h3>
+      <p>App básica para operaciones matemáticas.</p>
+      <a href="#" class="boton">Ver más</a>
+    </div>
+    <div class="tarjeta">
+      <h3>🌐 Página web personal</h3>
+      <p>Diseñada con HTML y CSS desde cero.</p>
+      <a href="#" class="boton">Ver más</a>
+    </div>
+    <div class="tarjeta">
+      <h3>⚙️ Servidor con Python</h3>
+      <p>Usé <code>http.server</code> para mostrar mi sitio localmente.</p>
+      <a href="#" class="boton">Ver más</a>
+    </div>
+  </div>
+</section>
+<section>
+  <h2>Contacto</h2>
+  <form>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+
+    <footer>
+        <p>Creado con ❤️ por RAMIREZ</p>
+    </footer>
+<button id="saludo">Haz clic aquí</button>
+
+<script>
+  const boton = document.getElementById('saludo');
+  boton.addEventListener('click', () => {
+    alert('¡Hola, RAMIREZ! Tu página está viva 🚀');
+  });
+</script>
+
+</body>
+</html>
